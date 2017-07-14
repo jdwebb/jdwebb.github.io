@@ -1,0 +1,376 @@
+/* Color codes
+#FAFAFA - White
+
+#E6E5E5	- New Light Gray
+
+#a1a1a1 - Light gray
+#383737 - Dark gray (Light black)
+#fff    - Also white
+#c7870e - Burnt Orange
+
+#4DAAE2 - Blue
+*/
+
+
+
+body {
+	background-color: #FAFAFA;
+	font-family: 'Open Sans', monospace;
+}
+
+
+.navbar {
+	background-color: #E6E5E5;
+	margin-bottom: 0;
+	z-index: 9999;
+	border: .3;
+	border-left: .3;
+	border-color: #383737;
+	font-size: 15px !important;
+	line-height: 1.42857143 !important;
+	letter-spacing: 4px;
+	border-radius: 0;
+	font-family: 'Open Sans', monospace;
+}
+
+.navbar li a, .navbar .navbar-brand {
+	color: #a1a1a1 !important;
+	transition: all 0.22s ease 0s;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+	color: #4DAAE2 !important;
+	background-color: #383737 !important;
+	transition: all 0.3s ease 0s;
+}
+
+.navbar-default .navbar-toggle {
+	border-color: transparent;
+	color: #fff !important;
+}
+
+.title {
+	padding: 200px 25px;
+}
+
+#introSection {
+	margin: 0 auto;
+	text-align: center;
+	height: 83vh;
+	background-color: #FFFFFF; 
+}
+
+.picture {
+	margin: 45px auto;
+	width: 210px;
+	height: 263px;
+	border-radius: 100px;
+}
+
+#colorText {
+	color: #4DAAE2;
+}
+
+
+.tagline {
+	font-size: 30px;
+}
+
+.btn-sm, .btn-sm:active, .btn-primary:focus, .btn-sm:focus {
+	background-color: #E6E5E5;
+	color: #a1a1a1;
+	border-color: #a1a1a1;
+	padding: 12px 18px;
+	margin-top: 25px;
+	transition: all 0.4s ease 0s;
+}
+
+.btn-sm:hover {
+	background-color: #383737;
+	color: #4DAAE2 !important;
+	border-color: #383737;
+	transition: all 0.3s ease 0s;
+}
+
+.coloredText {
+	color: #92468e;
+}
+
+
+.container-fluid {
+	padding: 60px 50px;
+}
+
+.img-responsive {
+	width: 100px;
+	height: 100px;
+}
+
+#aboutSection {
+	background-color: #4DAAE2;
+}
+
+#aboutTitle {
+	text-align: center;
+	color: #FAFAFA;
+	font-size: 30px;
+	padding-bottom: 20px;
+	margin: 0 auto;
+}
+
+#skillsTitle {
+	text-align: center;
+	color: #4DAAE2;
+	font-size: 30px;
+	padding-bottom: 20px;
+	margin: 0 auto;
+}
+
+#circle {
+	width: 10px;
+	height: 10px;
+	background: red;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	margin: 0;
+	position: absolute;
+	z-index: 1;
+	left: 275px;
+	margin-top: -13px;
+}
+
+#about {
+	background-color: #CCCCCC;
+	margin: 0 auto;
+	text-align: left;
+	padding: 10px;
+	height: 475px;
+	width: 750px;
+	border-radius: 5px;
+	padding-top: 15px;
+	font-family: 'Open Sans'
+	box-shadow: 5px 5px 1px rgba(56, 55, 55, 0.5);
+}
+
+#resume {
+	color: #32CD32;
+	padding-left: 60px;
+	margin-top: -50px;
+	font-size: 15px;
+}
+
+#skillsSection {
+	background-color: #FFFFFF;
+}
+
+#projectSection {
+	background-color: #4DAAE2;
+}
+
+.project {
+	background-color: #FAFAFA;
+	padding: 5px;
+	text-align: center;
+	margin: 20px;
+	height: 300px;
+	box-shadow: 5px 5px 1px rgba(56, 55, 55, 0.5);
+    
+    border: 5px solid #ccc;
+    float: left;
+    margin: 15px;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -o-transition: margin 0.5s ease-out;
+}
+
+#projectPicture {
+	height: 60%;
+	width: 100%;
+}
+
+#projectPicture:hover {
+	margin-top: 2px;
+}
+
+/* bump */
+.ex1 img{
+    border: 5px solid #ccc;
+    float: left;
+    margin: 15px;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -o-transition: margin 0.5s ease-out;
+}
+ 
+.ex1 img:hover {
+    margin-top: 2px;
+}
+
+
+#projectDescription {
+	color: #383737;
+	font-size: 12px;
+	padding-top: 10px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.projectTitle {
+	font-weight: 2000;
+}
+
+#achieveTitle {
+	text-align: center;
+	color: #4DAAE2;
+	font-size: 30px;
+	padding-bottom: 20px;
+	margin: 0 auto;
+}
+
+#achieveSection {
+	background-color: #E6E5E5;
+	color: #4DAAE2;
+}
+
+.fa-trophy {
+	background-color: #4DAAE2;
+	padding: 10px;
+	color: #E6E5E5;
+	border-radius: 50px;
+}
+
+#contactSection {
+	background-color: #a1a1a1;
+	color: #4DAAE2;
+}
+
+.contact {
+	background-color: #FAFAFA;
+	text-align: center;
+	box-shadow: 5px 5px 1px rgba(56, 55, 55, 0.5);
+	margin: 20px auto;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	transition: all 0.3s ease 0s;
+	/*width: 400px;*/
+}
+
+.contactButton, .contactButton:focus {
+	color: #4DAAE2;
+	background-color: #FAFAFA;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	transition: all 0.3s ease 0s;
+}
+
+.contactButton:hover {
+	color: #323232;
+	background-color: #FAFAFA;
+	border-radius: 30px;
+	border: none;
+	outline: none;
+	transition: all 0.3s ease 0s;
+}
+
+footer {
+	text-align: center;
+	color: #FAFAFA;
+}
+
+footer > p {
+	font-size: 12px;
+	color: #FAFAFA;
+}
+
+footer .scrollIcon {
+    font-size: 20px;
+    padding: 5px;
+    margin-top: 0px;
+    color: #FAFAFA;
+    transition: all 0.3s ease 0s;
+}
+
+footer .scrollIcon:hover {
+    color: #383737;
+    transition: all 0.3s ease 0s;
+    /*border: 2px solid #383737;*/
+}
+
+@media screen and (max-width:950px) {
+	.project {
+		margin: auto;
+		margin-bottom: 10px;
+	},
+	#terminalAbout {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width:768px) {
+	.contact {
+		width: 90%;
+	},
+	.project {
+		width: 200px;
+	}
+}
+
+@media only screen and (max-device-width: 479px) and (min-device-width: 320px) {
+	#about {
+		height: auto;
+		width: 100%;
+	},
+	#projectSection {
+		width: auto;
+		height: 90%;
+	},
+	#projectDescription {
+		padding-top: 20px;
+	},
+	.contact {
+		width: auto;
+		height: auto;
+	},
+	#link {
+		width:50%;
+	}
+}
+
+@media only screen and (max-device-width: 800px) and (min-device-width: 480px) {
+	#about {
+		height: auto;
+		width: 90%;
+	},
+	#projectSection {
+		width: auto;
+		height: auto;
+	},
+	#projectPicture {
+		width: 100px;
+	},
+	#projectDescription {
+		padding-top: 20px;
+	},
+	.contact {
+		width: auto;
+		height: auto;
+	}
+}
+
+@media only screen and (max-device-width: 990px) and (min-device-width: 530px) {
+	#projectPicture {
+		display: block;
+  	max-width:230px;
+  	max-height:95px;
+  	width: auto;
+  	height: auto;
+	},
+}
+
+@media only screen and (max-width:316px) and (min-device-width: 278px) {
+	#about {
+		height: auto;
+		width: 90%;
+	}
+}

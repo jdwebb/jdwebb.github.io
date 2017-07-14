@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang ="em">
+	<head>
+		<meta charset"utf-8">
+		<title> Jim Webb</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Bootstrap Import-->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+		<!-- Stylesheet -->
+  	<link href="style.css" rel="stylesheet" type="text/css">
+
+		<!-- Font Awesome Icons & Google Font Import -->
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+		<!-- Javascript -->
+  	<script src="site.js"></script>
+
+		<!-- Highcharts -->
+		<script src="https://code.highcharts.com/highcharts.js"></script>
+		<script src="https://code.highcharts.com/modules/exporting.js"></script>
+	</head>
+	<body>
+	<!-- Scrolling Body -->
+		<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+		<!-- Navbar -->
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+       			<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+      		</button>
+      	</div>
+      	<div class="collapse navbar-collapse" id="myNavbar">
+      		<ul class ="nav navbar-nav navbar-right">
+      			<li><a href="#introSection">HOME</a></li>
+      			<li><a href="#aboutSection">ABOUT</a></li>
+      			<li><a href="#skillsSection">SKILLS</a></li>
+						<li><a href="#projectSection">PROJECTS</a></li>
+						<li><a href="#achieveSection">ACHIEVEMENTS</a></li>
+      			<li><a href="#contactSection">CONTACT</a></li>
+      		</ul>
+      	</div>
+      </div>
+    </nav>
+
+      <!-- Title View -->
+			<div class="container-fluid" id="introSection">
+				<img src="images/pic.jpg" class="picture"></img>
+				<h4 class="tagline"><i</i> Hello, my name is <b id="colorText">Jim Webb</b>
+					<p> <sub> and I'm a <b id="colorText">Software Engineer</b></sub></p></h4>
+				<a href="#aboutSection" class="btn btn-primary btn-sm" role="button"><b>More About Me</b></a>
+			</div>
+		</div>
+
+<!-- About Section -->
+		<div class="container-fluid" id ="aboutSection">
+			<h4 id ="aboutTitle">About Me</h4>
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+			<div class="w3-content w3-display-container">
+
+			<div class="w3-display-container mySlides">
+			  <img src="images/PlaceHolder1.jpg" style="width:100%">
+			  <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
+			    Jim Webb is a 2017 dean&#39;s list graduate from the Quinnipiac University Software Engineering program where he also pursued a minor in mathematics.
+
+			    Here is a copy of my <a href "resume.pdf"> resume.</a>
+			  </div>
+			</div>
+
+			<div class="w3-display-container mySlides">
+			  <img src="images/PlaceHolder2.jpg" style="width:100%">
+			  <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
+			    He was one of the founding members and eventually became president of the Quinnipiac Computing Club.  He is also an active member of the Quinnipiac Engineering Student Organization, or QUESO for short.
+			  </div>
+			</div>
+
+			<div class="w3-display-container mySlides">
+			  <img src="images/PlaceHolder1.jpg" style="width:100%">
+			  <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
+			    His hobbies include programming, playing soccer, and going to trivia with his friends.
+			  </div>
+			</div>
+
+			<div class="w3-display-container mySlides">
+			  <img src="images/PlaceHolder2.jpg" style="width:100%">
+			  <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
+			    He also enjoys hiking and traveling and has been fortunate enough to hike Mt. Olympus, Mt. Vesuvius, and Mt. Washington.
+			  </div>
+			</div>
+
+			<div class="w3-display-container mySlides">
+			  <img src="images/PlaceHolder1.jpg" style="width:100%">
+			  <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
+			  	Home for Jim is with his dog in a town called Sandwich.
+			  </div>
+			</div>
+
+			<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+			<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+			</div>
+		</div>
+
+		<!-- Skills -->
+		<div class="container-fluid" id ="skillsSection">
+			<h4 id ="skillsTitle">Technical Experience</h4>
+			<div class ="col-md-6 col-md-offset-3 skills">
+				<div id="container" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+			</div>
+		</div>
+
+
+		<!-- Projects -->
+		<div class="container-fluid" id="projectSection">
+			<h4 id ="aboutTitle">Highlighted Projects</h4>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="project">
+						<a href="https://github.com/jdwebb/CaptstoneProject"><img src="images/capstoneImg.png" id="projectPicture" data-toggle="modal" data-target="#myModal" title ="Check Out This Project!"></img></a>
+						<br>
+						<div id="projectDescription">
+							<b class="projectTitle">Quinnipiac Senior Capstone Project:</b>
+							<p>Perfusion simulation software commissioned by the Quinnipiac University Cardiovascular Perfusion Program as a perfusion training simulator.  The application was primarily written in JavaScript using Meteor and MongoDB and will be used in the coming years to teach future students.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="project">
+						<a href="https://github.com/jdwebb/EworkSpace/tree/master/HangManMidterm/src"><img src="images/HangMan2.png" id="projectPicture" data-toggle="modal" data-target="#myModal" title ="Check Out This Project!"></img></a>
+						<br>
+						<div id="projectDescription">
+							<b class="projectTitle">Hangman MiniGame:</b>
+							<p>A simple Java program coded in order to gain a deeper understanding of TCP "Three-way handshake" as it was later made with a client side which allowed it to be used across multiple computers where one would create the word and the other would be able to guess.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="project">
+						<a href="https://github.com/jdwebb/TvDatabaseProject"><img src="images/db.png" id="projectPicture" data-toggle="modal" data-target="#myModal" title ="Check Out This Project!"></img></a>
+						<br>
+						<div id="projectDescription">
+							<b class="projectTitle">SQLite Database Project:</b>
+							<p>A database application which uses Python to communicate with SQLite to retrieve data about TV series from OMDBd's open-source API. The perfect companion for binge watching a new series or quickly getting caught up on what happened in the previous episode.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Achievements -->
+		<div class="container-fluid" id="achieveSection">
+			<h4 id ="achieveTitle">Jim's Achievements</h4>
+			<div class="row">
+				<div class="col-md-4 text-center">
+					<i class="fa fa-trophy fa-3x" aria-hidden="true"></i>
+					<h4>-- Runner Up --<br>Spring 2016 Quinnipiac University Hackathon</h4>
+				</div>
+				<div class="col-md-4 text-center">
+					<i class="fa fa-trophy fa-3x" aria-hidden="true"></i>
+					<h4>-- Runner Up --<br>Fall 2016 Quinnipiac University Hackathon</h4>
+				</div>
+				<div class="col-md-4 text-center">
+					<i class="fa fa-trophy fa-3x" aria-hidden="true"></i>
+					<h4>-- Dean's List --<br>Fall 2016 Semester</h4>
+				</div>
+			</div>
+		</div>
+
+		<!-- Contact Section -->
+		<div class="container-fluid" id="contactSection">
+			<h4 id ="aboutTitle">Contact Jim</h4>
+				<div class="contact">
+					<h5><a href="https://github.com/jdwebb" class="contactButton btn btn-default btn-circle"><i class="fa fa-github fa-3x"></i><br>Check out my GitHub</h5></a>
+				</div>
+				<div class="contact">
+					<h5><a href="https://www.linkedin.com/in/james-webb-38086a92/" class="contactButton btn btn-default btn-circle"><i class="fa fa-linkedin-square fa-3x"></i><br>Connect on LinkedIn</h5></a>
+				</div>
+				<div class="contact">
+					<h5><a href="mailto:1994webbjames@gmail.com" class="contactButton btn btn-default btn-circle"><i class="fa fa-envelope-square fa-3x"></i><br>Send me an email</h5></a>
+				</div>
+		</div>
+
+		<!-- Footer -->
+		<footer class="container-fluid" id="contactSection">
+			<a href="#myPage" title="Top of Page">
+				<i class="scrollIcon fa fa-arrow-circle-o-up" aria-hidden="true"></i>
+			</a>
+			<p><span class="glyphicon glyphicon-copyright-mark"></span> 2017 James Webb. All rights reserved.</p>
+		</footer>
+	</body>
+</html>
