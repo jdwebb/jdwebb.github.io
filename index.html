@@ -1,202 +1,176 @@
 <!DOCTYPE html>
-<html lang ="em">
-	<head>
-		<meta charset"utf-8">
-		<title> Jim Webb</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+<title>Jim Webb</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Stylesheet -->
+<link href="src/style.css" rel="stylesheet" type="text/css">
 
-		<!-- Bootstrap Import-->
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 
-		<!-- Stylesheet -->
-  	<link href="style.css" rel="stylesheet" type="text/css">
+<!-- Javascript -->
+<script src="src/site.js"></script>
 
-		<!-- Font Awesome Icons & Google Font Import -->
-  	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-		<link href="//fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
-		<link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<!-- Highcharts -->
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
 
-		<!-- Javascript -->
-  	<script src="site.js"></script>
+<body>
 
-		<!-- Highcharts -->
-		<script src="https://code.highcharts.com/highcharts.js"></script>
-		<script src="https://code.highcharts.com/modules/exporting.js"></script>
-	</head>
-	<body>
-	<!-- Scrolling Body -->
-		<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+		<a href="#experience" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-code"></i> EXPERIENCE</a>
+    <a href="#projects" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-archive"></i> PROJECTS</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
 
-		<!-- Navbar -->
-		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-						<span class="icon-bar"></span>
-       			<span class="icon-bar"></span>
-        		<span class="icon-bar"></span>
-      		</button>
-      	</div>
-      	<div class="collapse navbar-collapse" id="myNavbar">
-      		<ul class ="nav navbar-nav navbar-right">
-      			<li><a href="#introSection">HOME</a></li>
-      			<li><a href="#aboutSection">ABOUT</a></li>
-      			<li><a href="#skillsSection">SKILLS</a></li>
-						<li><a href="#projectSection">PROJECTS</a></li>
-						<li><a href="#achieveSection">ACHIEVEMENTS</a></li>
-      			<li><a href="#contactSection">CONTACT</a></li>
-      		</ul>
-      	</div>
-      </div>
-    </nav>
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+		<a href="#experience" class="w3-bar-item w3-button" onclick="toggleFunction()">EXPERIENCE</a>
+    <a href="#projects" class="w3-bar-item w3-button" onclick="toggleFunction()">PROJECTS</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
 
-      <!-- Title View -->
-			<div class="container-fluid" id="introSection">
-				<img src="images/pic.jpg" class="picture"></img>
-				<h4 class="tagline"><i</i> Hello, my name is <b id="colorText">Jim Webb</b>
-					<p> <sub> and I'm a <b id="colorText">Software Engineer</b></sub></p></h4>
-				<a href="#aboutSection" class="btn btn-primary btn-sm" role="button"><b>More About Me</b></a>
-			</div>
-		</div>
+<!-- First Parallax Image with Logo Text -->
+<div class="w3-display-container w3-opacity-min" id="home">
+	<video autoplay muted loop id="myVideo" width=100% height=25%>
+	  <source src="assets/videos/perugia.mp4" type="video/mp4">
+	</video>
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">KEEP <span class="w3-hide-small">EXPLORING</span>
+  </div>
+</div>
 
-<!-- About Section -->
-		<div class="container-fluid" id ="aboutSection">
-			<h4 id ="aboutTitle">About Me</h4>
-			<meta name="viewport" content="width=device-width, initial-scale=1">
-			<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">Jim Webb</h3>
+  <p class="w3-center"><em>Software Engineer</em></p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <img src="assets/images/pic.jpg" class="w3-round-xlarge w3-image" alt="Photo of Me" width="250" height="350">
+    </div>
 
-			<div class="w3-content w3-display-container">
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>Welcome to my website.  This is a place for me to practice my web development skills and share some of the projects I am working on.
+				I am currently a full-time employee at a home automation company on Cape Cod.  My professional code is written primarily in
+				Objective-C along with some in GoLang and Python.  For the future, I am looking into a career in the medical technology field in and around the
+				Cambridge/ Boston Massachusettes area.</p>
+    </div>
+  </div>
+</div>
 
-			<div class="w3-display-container mySlides" style = "display: block;">
-			  <img src="jdwebb.github.io/images/PlaceHolder2.JPG" style="width:100%">
-			  <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
-			    Jim Webb is a 2017 dean&#39;s list graduate from the Quinnipiac University Software Engineering program where he also pursued a minor in mathematics.
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+	<br> </br>
+	<br> </br>
+</div>
 
-			    Here is a copy of my <a href "resume.pdf"> resume.</a>
-			  </div>
-			</div>
-
-			<div class="w3-display-container mySlides" style = "display: none;">
-			  <img src="jdwebb.github.io/images/PlaceHolder2.JPG" style="width:100%">
-			  <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
-			    He was one of the founding members and eventually became president of the Quinnipiac Computing Club.  He is also an active member of the Quinnipiac Engineering Student Organization, or QUESO for short.
-			  </div>
-			</div>
-
-			<div class="w3-display-container mySlides" style = "display: none;">
-			  <img src="jdwebb.github.io/images/PlaceHolder2.JPG" style="width:100%">
-			  <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
-			    His hobbies include programming, playing soccer, and going to trivia with his friends.
-			  </div>
-			</div>
-
-			<div class="w3-display-container mySlides" style = "display: none;">
-			  <img src="jdwebb.github.io/images/PlaceHolder2.JPG" style="width:100%">
-			  <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
-			    He also enjoys hiking and traveling and has been fortunate enough to hike Mt. Olympus, Mt. Vesuvius, and Mt. Washington.
-			  </div>
-			</div>
-
-			<div class="w3-display-container mySlides" style = "display: none;">
-			  <img src="jdwebb.github.io/images/PlaceHolder2.JPG" style="width:100%">
-			  <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
-			  	Home for Jim is with his dog in a town called Sandwich.
-			  </div>
-			</div>
-
-			<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
-			<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
-
-			</div>
-		</div>
-
-		<!-- Skills -->
+<!-- Container (Experience Section) -->
+<div class="w3-content w3-container w3-padding-64" id="experience">
 		<div class="container-fluid" id ="skillsSection">
 			<h4 id ="skillsTitle">Technical Experience</h4>
 			<div class ="col-md-6 col-md-offset-3 skills">
 				<div id="container" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
 			</div>
 		</div>
+</div>
 
+<!-- Second Parallax Image with projects Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">projects</span>
+  </div>
+</div>
 
-		<!-- Projects -->
-		<div class="container-fluid" id="projectSection">
-			<h4 id ="aboutTitle">Highlighted Projects</h4>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="project">
-						<a href="https://github.com/jdwebb/CaptstoneProject"><img src="images/capstoneImg.png" id="projectPicture" data-toggle="modal" data-target="#myModal" title ="Check Out This Project!"></img></a>
-						<br>
-						<div id="projectDescription">
-							<b class="projectTitle">Quinnipiac Senior Capstone Project:</b>
-							<p>Perfusion simulation software commissioned by the Quinnipiac University Cardiovascular Perfusion Program as a perfusion training simulator.  The application was primarily written in JavaScript using Meteor and MongoDB and will be used in the coming years to teach future students.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="project">
-						<a href="https://github.com/jdwebb/EworkSpace/tree/master/HangManMidterm/src"><img src="images/HangMan2.png" id="projectPicture" data-toggle="modal" data-target="#myModal" title ="Check Out This Project!"></img></a>
-						<br>
-						<div id="projectDescription">
-							<b class="projectTitle">Hangman MiniGame:</b>
-							<p>A simple Java program coded in order to gain a deeper understanding of TCP "Three-way handshake" as it was later made with a client side which allowed it to be used across multiple computers where one would create the word and the other would be able to guess.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="project">
-						<a href="https://github.com/jdwebb/TvDatabaseProject"><img src="images/db.png" id="projectPicture" data-toggle="modal" data-target="#myModal" title ="Check Out This Project!"></img></a>
-						<br>
-						<div id="projectDescription">
-							<b class="projectTitle">SQLite Database Project:</b>
-							<p>A database application which uses Python to communicate with SQLite to retrieve data about TV series from OMDBd's open-source API. The perfect companion for binge watching a new series or quickly getting caught up on what happened in the previous episode.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+<!-- Container (projects Section) -->
+<div class="w3-content w3-container w3-padding-64" id="projects">
+  <h3 class="w3-center">MY PROJECTS</h3>
+  <p class="w3-center"><em>Here are some of my notable projects.</em></p><br>
 
-		<!-- Achievements -->
-		<div class="container-fluid" id="achieveSection">
-			<h4 id ="achieveTitle">Jim's Achievements</h4>
-			<div class="row">
-				<div class="col-md-4 text-center">
-					<i class="fa fa-trophy fa-3x" aria-hidden="true"></i>
-					<h4>-- Runner Up --<br>Spring 2016 Quinnipiac University Hackathon</h4>
-				</div>
-				<div class="col-md-4 text-center">
-					<i class="fa fa-trophy fa-3x" aria-hidden="true"></i>
-					<h4>-- Runner Up --<br>Fall 2016 Quinnipiac University Hackathon</h4>
-				</div>
-				<div class="col-md-4 text-center">
-					<i class="fa fa-trophy fa-3x" aria-hidden="true"></i>
-					<h4>-- Dean's List --<br>Fall 2016 Semester</h4>
-				</div>
-			</div>
-		</div>
+  <!-- Responsive Grid. Three columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col s4">
+      <img src="assets/images/capstoneImg.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quinnipiac Perfusion Simulation System">
+    </div>
 
-		<!-- Contact Section -->
-		<div class="container-fluid" id="contactSection">
-			<h4 id ="aboutTitle">Contact Jim</h4>
-				<div class="contact">
-					<h5><a href="https://github.com/jdwebb" class="contactButton btn btn-default btn-circle"><i class="fa fa-github fa-3x"></i><br>Check out my GitHub</h5></a>
-				</div>
-				<div class="contact">
-					<h5><a href="https://www.linkedin.com/in/james-webb-38086a92/" class="contactButton btn btn-default btn-circle"><i class="fa fa-linkedin-square fa-3x"></i><br>Connect on LinkedIn</h5></a>
-				</div>
-				<div class="contact">
-					<h5><a href="mailto:1994webbjames@gmail.com" class="contactButton btn btn-default btn-circle"><i class="fa fa-envelope-square fa-3x"></i><br>Send me an email</h5></a>
-				</div>
-		</div>
+    <div class="w3-col s4">
+      <img src="assets/images/Marsh.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coming Soon">
+    </div>
 
-		<!-- Footer -->
-		<footer class="container-fluid" id="contactSection">
-			<a href="#myPage" title="Top of Page">
-				<i class="scrollIcon fa fa-arrow-circle-o-up" aria-hidden="true"></i>
-			</a>
-			<p><span class="glyphicon glyphicon-copyright-mark"></span> 2017 James Webb. All rights reserved.</p>
-		</footer>
-	</body>
-</html>
+    <div class="w3-col s4">
+      <img src="assets/images/savageRiver.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coming Soon">
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with projects Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-16" id="contact">
+  <div class="w3-row w3-padding-16 w3-section">
+    <!--<div class="w3-col m4 w3-container">
+      <img src="/w3images/map.jpg" class="w3-image w3-round" style="width:100%">
+    </div>-->
+    <div class="w3-col center w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Boston, US<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: (508) 648-9649<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: 1994webbjames@gmail.com<br>
+      </div>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+		<a href="https://github.com/jdwebb" class="contactButton btn btn-default btn-circle"><i class="fa fa-github"></i></a>
+		<a href="https://www.linkedin.com/in/james-webb-38086a92/" class="contactButton btn btn-default btn-circle"><i class="fa fa-linkedin-square"></i></a>
+  </div>
+</footer>
+</body>
