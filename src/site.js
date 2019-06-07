@@ -9,69 +9,63 @@ $(document).ready(function() {
 			window.location.hash = hash;
 		});
 	});
+	// Build the chart
+	Highcharts.chart('container', {
+		chart: {
+			plotBackgroundColor: null,
+			plotBorderWidth: null,
+			plotShadow: false,
+			type: 'pie'
+		},
+		title: {
+			text: 'Programming Language Experience'
+		},
+		tooltip: {
+			pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+		},
+		plotOptions: {
+			pie: {
+				allowPointSelect: true,
+				cursor: 'pointer',
+				dataLabels: {
+					enabled: true,
+					format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+					style: {
+						color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+					}
+				}
+			}
+		},
+		series: [{
+			name: 'Programming Languages',
+			data: [{
+				name: 'Objective C',
+				y: 2.5/15*100
+			}, {
+				name: 'JavaScript',
+				y: 2/15*100
+			}, {
+				name: 'Python',
+				y: 1.5/15*100
+			}, {
+				name: 'Java',
+				y: 3/15*100
+			}, {
+				name: 'SQLite',
+				y: 2/15*100
+			}, {
+				name: 'Golang',
+				y: 1/15*100
+			}, {
+				name: 'HTML/ CSS',
+				y: 2/15*100
+			}, {
+				name: 'Other',
+				y: 1/15*100
+			}]
+		}]
+	});
 })
-
-$(function () {
-    var chart;
-        $(document).ready(function () {
-            // Build the chart
-						Highcharts.chart('container', {
-						  chart: {
-						    plotBackgroundColor: null,
-						    plotBorderWidth: null,
-						    plotShadow: false,
-						    type: 'pie'
-						  },
-						  title: {
-						    text: 'Programming Language Experience'
-						  },
-						  tooltip: {
-						    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-						  },
-						  plotOptions: {
-						    pie: {
-						      allowPointSelect: true,
-						      cursor: 'pointer',
-						      dataLabels: {
-						        enabled: true,
-						        format: '<b>{point.name}</b>: {point.percentage:.1f} %',
-						        style: {
-						          color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
-						        }
-						      }
-						    }
-						  },
-						  series: [{
-						    name: 'Programming Languages',
-						    data: [{
-						      name: 'Objective C',
-						      y: 2.5/15*100
-						    }, {
-						      name: 'JavaScript',
-						      y: 2/15*100
-						    }, {
-						      name: 'Python',
-						      y: 1.5/15*100
-						    }, {
-						      name: 'Java',
-						      y: 3/15*100
-						    }, {
-						      name: 'SQLite',
-						      y: 2/15*100
-						    }, {
-						      name: 'Golang',
-						      y: 1/15*100
-						    }, {
-						      name: 'HTML/ CSS',
-						      y: 2/15*100
-						    }, {
-						      name: 'Other',
-						      y: 1/15*100
-						    }]
-						  }]
-						});
-    });
-});
 
 // Modal Image Gallery
 function onClick(element) {
