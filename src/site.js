@@ -10,61 +10,75 @@ $(document).ready(function() {
 		});
 	});
 	// Build the chart
-	Highcharts.chart('container', {
+Highcharts.chart('container', {
 		chart: {
-			plotBackgroundColor: null,
-			plotBorderWidth: null,
-			plotShadow: false,
-			type: 'pie'
-		},
-		title: {
-			text: 'Programming Language Experience'
-		},
-		tooltip: {
-			pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-		},
-		plotOptions: {
-			pie: {
-				allowPointSelect: true,
-				cursor: 'pointer',
-				dataLabels: {
-					enabled: true,
-					format: '<b>{point.name}</b>: {point.percentage:.1f} %',
-					style: {
-						color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
-					}
-				}
-			}
-		},
-		series: [{
+        type: 'column'
+    },
+    title: {
+        text: 'Programming Language Experience'
+    },
+    xAxis: {
+        categories: [
+            'Objective C',
+            'Python',
+            'Javascript',
+            'Java',
+            'Sqlite',
+            'GoLang',
+            'HTML/ CSS',
+            'Scala'
+        ],
+        crosshair: true
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Experience (years)'
+        }
+    },
+    tooltip: {
+        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+            '<td style="padding:0"><b>{point.y:.1f} year(s)</b></td></tr>',
+        footerFormat: '</table>',
+        shared: true,
+        useHTML: true
+    },
+    plotOptions: {
+        column: {
+            pointPadding: 0.2,
+            borderWidth: 0
+        }
+    },
+    series: [{
 			name: 'Programming Languages',
 			data: [{
 				name: 'Objective C',
-				y: 2.5/15*100
+				y: 2.5
 			}, {
 				name: 'JavaScript',
-				y: 2/15*100
+				y: 2
 			}, {
 				name: 'Python',
-				y: 1.5/15*100
+				y: 2
 			}, {
 				name: 'Java',
-				y: 3/15*100
+				y: 2
 			}, {
 				name: 'SQLite',
-				y: 2/15*100
+				y: 2
 			}, {
 				name: 'Golang',
-				y: 1/15*100
+				y: 1
 			}, {
 				name: 'HTML/ CSS',
-				y: 2/15*100
+				y: 2
 			}, {
-				name: 'Other',
-				y: 1/15*100
+				name: 'Scala',
+				y: 1
 			}]
-		}]
-	});
+	    }]
+    });
 })
 
 // Modal Image Gallery
