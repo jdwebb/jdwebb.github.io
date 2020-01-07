@@ -20,22 +20,28 @@ body, html {
 }
 
 /* Create a Parallax Effect */
-.bgimg-2, .bgimg-3 {
+.bgimg-2, .bgimg-3, .bgimg-4 {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-/* Second image (Projects) */
+/*(Tech exp) */
 .bgimg-2 {
   background-image: url("../assets/images/mistyMarsh.JPG");
-  min-height: 300px;
+  min-height: 400px;
 }
 
-/* Third image (Contact) */
+/*(Contact) */
 .bgimg-3 {
   background-image: url("../assets/images/airTaxi.JPG");
+  min-height: 400px;
+}
+
+/*(Tech expProjects) */
+.bgimg-4 {
+  background-image: url("../assets/images/Marsh.JPG");
   min-height: 400px;
 }
 
