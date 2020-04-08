@@ -19,6 +19,10 @@
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 <script src="https://code.highcharts.com/modules/export-data.js"></script>
 
+<!-- Unity -->
+<script src="TemplateData/UnityProgress.js"></script>
+<script src="Build/UnityLoader.js"></script>
+
 <body>
 
 <!-- Navbar (sit on top) -->
@@ -104,23 +108,11 @@
 
 <!-- Container (projects Section) -->
 <div class="w3-content w3-container w3-padding-64" id="projects">
-  <h3 class="w3-center">MY PROJECTS</h3>
-  <p class="w3-center"><em>Here are some of my notable projects.</em></p><br>
-
-  <!-- Responsive Grid. Three columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
-    <div class="w3-col s4">
-      <img src="assets/images/capstoneImg.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quinnipiac Perfusion Simulation System">
-    </div>
-
-    <div class="w3-col s4">
-      <img src="assets/images/Marsh.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coming Soon">
-    </div>
-
-    <div class="w3-col s4">
-      <img src="assets/images/savageRiver.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coming Soon">
-    </div>
-  </div>
+  <h3 class="w3-center">MY PROJECT - AI Asteroids</h3>
+  <script>
+    var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Downloads.json", {onProgress: UnityProgress});
+  </script>
+  <div id="gameContainer" style="width: 960px; height: 600px"></div>
 </div>
 
 <!-- Modal for full size images on click-->
@@ -132,7 +124,7 @@
   </div>
 </div>
 
-<!-- Fourth Parallax Image with projects Text -->
+<!-- Fourth Parallax Image with contact Text -->
 <div class="bgimg-3 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
      <span class="w3-xxlarge w3-text-white w3-wide">Contact</span>
